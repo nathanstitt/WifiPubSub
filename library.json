@@ -1,0 +1,28 @@
+{
+    "name": "WifiPubSub",
+    "keywords": "mqtt, esp8266, wifi",
+    "description": "Wifi configuration portal with MQTT support",
+    "frameworks": "arduino",
+    "platforms": "*",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nathanstitt/WifiPubSub.git"
+    },
+    "export": {
+        "include": [
+            "src/*.h",
+            "src/**/*.h",
+            "src/**/*.cpp"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Nathan Stitt",
+            "email": "nathan@stitt.org",
+            "maintainer": true
+        }
+    ],
+    "dependencies": [
+        "ESP8266WiFi", "PubSubClient", "WifiManager", "ArduinoOTA"
+    ]
+}
